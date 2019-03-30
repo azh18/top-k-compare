@@ -6,6 +6,7 @@
 #include <heap.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 
 int min_top_k(int *ar, int n, int k, int *result){
     int* arNeg = (int*)malloc(sizeof(int)*n);

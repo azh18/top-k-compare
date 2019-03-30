@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -g -Wall -I. -O2
+CFLAGS = -g -Wall -I. 
 # SRCS = HelloWorld.cpp
 # PROG = HelloWorld
 appname = main
