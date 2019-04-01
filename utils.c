@@ -36,5 +36,5 @@ void get_timer(clock_t *c){
 }
 
 void print_duration(clock_t *start, clock_t *end){
-    printf("duration: %lf us?\n", ((double) ((*end) - (*start)) / CLOCKS_PER_SEC));
+    printf("duration: %lf ms?\n", ((double) ((*end) - (*start)) / CLOCKS_PER_SEC * 1000));
 }

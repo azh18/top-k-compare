@@ -21,7 +21,7 @@ void run_test_round(int *ar, int n, int k, int *result){
 
 int main(){
     int *bigData;
-    int bigN = 1000000, medN=10000, smallN=100;
+    int bigN = 10000000, medN=100000, smallN=1000;
     int bigKSc = 100000, medKSc = 1000, smallKSc = 10;
 
     int *result = (int*)malloc(sizeof(int)*bigN);
@@ -46,6 +46,31 @@ int main(){
     // test 3: bigN, small k
     printf("bigN, small k: \n");
     run_test_round(bigData, bigN, smallKSc, result);
+
+    // test 4: medium N, medium k
+    printf("medium N, medium k: \n");
+    run_test_round(bigData, medN, medKSc , result);
+
+    // test 5: medium N, small k
+    printf("medium N, small k\n");
+    run_test_round(bigData, medN, smallKSc, result);
+
+    // test 7: small N, small k
+    printf("small N, small k\n");
+    run_test_round(bigData, smallN, smallKSc, result);
+
+    quick_sort(bigData, 0, bigN);
+    // test 1: bigN, bigK
+    // printf("bigN, bigK: \n");
+    // run_test_round(bigData, bigN, bigKSc, result);
+
+    // // test 2: bigN, medium k
+    // printf("bigN, medium k: \n");
+    // run_test_round(bigData, bigN, medKSc, result);
+
+    // // test 3: bigN, small k
+    // printf("bigN, small k: \n");
+    // run_test_round(bigData, bigN, smallKSc, result);
 
     // test 4: medium N, medium k
     printf("medium N, medium k: \n");
