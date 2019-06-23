@@ -67,4 +67,15 @@ N=1000:
 |----|----|----|---|---|
 |k=10|1.129|0.014|**0.009**|0.521|
 
+## Conclusion
+
+- When N is large and k is small, no matter the original array is sorted or not sorted, Min Heap Algorithm achieves the best performance.
+- When k is large, Linear Time Method achieves the best one, but it fails when the original array is sorted.
+
+Therefore, we give a conclusion that:
+
+- If array is sorted, avoid Linear Time Method, use Min Heap Algorithm instead.
+- If k is not too large, use Min Heap Algorithm.
+- If k is large, use Linear Time Method.
+
 
